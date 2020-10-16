@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.gameContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0px; /*Hacemos sin gap para que se rellene con el fondo de cesped*/
+}
+.gameBoard {
+    display:-ms-grid;
+    display: grid;
+    /*
+    display: flex;
+    width: 640px;
+    height: 640px;
+    flex-direction: row;*/
+    border: black solid 6px;
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+}
+.snake {
+    width: 100%;
+    height: 100%;
+}
+
+.gameUI {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(71, 104, 73, 0.3);
+    /*display: none;*/
+}
+.gameUI > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: blanchedalmond;
+    padding: 25px;
+    border:solid black 2px;
+
+}
+
+input[type="text"] {
+    border: black solid 5px;
+    background-color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0px;
+}
+input[type="button"], button {
+    border: black solid 5px;
+    background-color: white;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 10px 0px;
+}
